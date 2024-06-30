@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+.cardbody{
+
+    width: 100%;
+
+    
+    background-color:#fdfcf9;
+     color: #eeb83c;
+    padding: 15px 15px;
+    font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+ 
+ 
+  font-size: 15px;
+  }
+  .cardbody h3{
+ 
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .cardbody h5{
+    font-weight: bold;
+    font-size: 17px;
+  
+  }
+  
+  /*--------------------*/
+  
+   .card{
+    background-color: #fcfbf7;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s;
+   
+  }
+   .card .txt{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top: 15px;
+    left: 15px;
+    right: 5px;
+    bottom: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+   .card .txt .icons i{
+    background-color: #1c1c1c;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid #1c1c1c;
+    transition: all 0.6s;
+  }
+   .card .image{
+    margin-top: 15px;
+    margin-left: 15px;
+    overflow: hidden;
+    width: 90%;
+    height: 270px;
+    border-radius: 12px 12px;
+  }
+   .card .image img{
+    width: 100%;
+    height: 100%;
+  }
+   .card .txt .icons i:hover{
+    background-color: #fff;
+    color: #1c1c1c;
+  }
+   .card:hover .txt{
+    transform: rotateY(180deg);
+    z-index: 2;
+  }
+   .card:hover .txt .icons{
+    transform: rotateY(180deg);
+  }
+   .card:hover img{
+    transform: scale(1.1);
+  }
+  .docword{
+    color: #FDB403;
+    padding: 30px 30px;
+    font-size: 80px;
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+   .btn 
+{
+    transition: transform 1s , opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+    width: 100%;
+    padding: 7px 7px;
+    background-color: #eeb83c;
+    color: #fff;
+    border: none;
+    border-radius: 5px 5px;
+}
+.cardbody:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+
+}
+.prodtext{
+  text-align: start;  
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Lora", serif;
+  
+
+}

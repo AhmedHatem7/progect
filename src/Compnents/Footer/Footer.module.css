@@ -1,0 +1,228 @@
+.footer {
+    background-image: linear-gradient(to left, rgb(243, 169, 59),#ffa500);
+    padding: 3rem 0;
+    font-size: 0.9rem;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    flex-basis: 30%;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 0.5s ease-in-out forwards;
+  }
+  
+  .heading {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color:#FFF;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .headingText {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .headingAnimation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+    transform: translateX(-100%);
+    animation: slideIn 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .text {
+    line-height: 1.5;
+    animation: fadeInUp 0.5s ease-in-out 0.3s forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    animation: fadeInUp 0.5s ease-in-out 0.6s forwards;
+    opacity: 0;
+  }
+  
+  .listItem {
+    margin-bottom: 0.5rem;
+  }
+  
+  .link {
+    font-size: large;
+    color: #FFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .link:hover {
+    color: #ff6b00;
+  }
+  
+  .subscribeButton {
+    background-color: #ffc400;
+    color: #f5f5f5;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: fadeInUp 0.5s ease-in-out 0.9s forwards;
+    opacity: 0;
+  }
+  
+  .subscribeButton:hover {
+    background-color: #e65c00;
+  }
+  
+  .subscribeText {
+    animation: fadeInUp 0.5s ease-in-out 0.9s forwards;
+    opacity: 0;
+  }
+  
+  .copyright {
+    text-align: center;
+    color: #eea909;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    animation: fadeIn 0.5s ease-in-out 1.2s forwards;
+    opacity: 0;
+    background-color: #f5f5f5;
+    height: 30px;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .h6{
+    font-weight: 100px;
+  }
+  .fb{
+   
+ width: 40px;
+ height: 40px;
+    border-radius: 50% 50%;
+ border: 1px white solid;
+  margin-right: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #09c;
+    background-color: #FFF;
+    transition: all .5s .0s;
+  }
+  .fb:hover{
+    scale: 1.2;
+    color: #eea909;
+  }
+  .tw{
+    width: 40px;
+    height: 40px;
+       border-radius: 50% 50%;
+    border: 1px white solid;
+    margin-right: 10px;
+      font-size: 30px;
+      color: #09c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #FFF;
+      transition: all .5s 0s;
+    }
+    .tw:hover{
+      scale: 1.2;
+      color: #eea909;
+    }
+    .goo:hover{
+      scale: 1.2;
+      color: #eea909;
+    }
+    .goo{
+        width: 40px;
+        height: 40px;
+           border-radius: 50% 50%;
+        border: 1px white solid;
+        margin-right: 10px;
+          font-size: 30px;
+          color: rgb(114, 9, 9);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #FFF;
+          transition: all .5s 0s;
+        }
+        .insta{
+            width: 40px;
+            height: 40px;
+               border-radius: 50% 50%;
+            border: 1px white solid;
+           
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                border-radius: 40px;
+                color: #fff;
+                font-size: 30px;
+                line-height: 25px;
+                vertical-align: middle;
+                background: #d6249f;
+                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+                box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all .5s .0s;
+        }
+        .insta:hover{
+          scale: 1.2;
+         
+            color: #eea909;
+          
+        }
+ 
